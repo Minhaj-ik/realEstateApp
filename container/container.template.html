@@ -1,0 +1,21 @@
+<nav class="header">
+    <h4>LOGO</h4>
+
+    <ul>
+        <li><a href=""  ng-click="$ctrl.handleStructure($event)">Home</a></li>
+        <li><a href=""  ng-click="$ctrl.handleStructure($event)">About</a></li>
+        <li><a href=""  ng-click="$ctrl.handleStructure($event)">Contact</a></li>
+        <li><a href=""  ng-click="$ctrl.handleStructure($event)">Weather</a></li>
+
+    </ul>
+
+</nav>
+
+<div ng-switch="$ctrl.switchValue">
+    <div ng-switch-when="About"><about-us></about-us></div>
+    <div ng-switch-when="Contact"><contact></contact></div>
+    <div ng-switch-when="Weather"><weather></weather></div>
+
+    <div ng-switch-default><main-comp></main-comp></div>
+
+</div>

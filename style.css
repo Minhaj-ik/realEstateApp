@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(230, 230, 191);
+    padding: 15px;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li{
+    margin-right: 15px;
+}
+/* Add some styling to hotel details */
+main-comp div {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+main-comp img {
+    max-width: 100%;
+    height: auto;
+}
+
+#img{
+    height: 350px;
+    width: 350px;
+}
+
+.hotel-container{
+    display: inline-block;
+    margin: 2%;
+    padding: 2%;
+    position: relative;
+    border: none;
+   
+}
+
+.hotel-container:hover{
+    background-color: black;
+    color: white;
+}
+
+#hotel-name{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#hotel-address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: auto;
+}
+
+

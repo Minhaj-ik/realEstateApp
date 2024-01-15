@@ -1,0 +1,1 @@
+var weatherService= angular.module('weatherService.service')
