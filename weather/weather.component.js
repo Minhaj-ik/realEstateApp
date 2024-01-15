@@ -1,6 +1,6 @@
 angular.module('weather')
    .component('weather', {
-        templateUrl:'container/weather/weather.template.html',
+        templateUrl:'weather/weather.template.html',
         controller: ['weatherService', function(weatherService){
             var $ctrl = this;
             $ctrl.city = '';

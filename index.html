@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js" defer></script>
     <script src="./app.module.js" defer></script>
-    <script src="container/core/weatherService.service.js"defer></script>
-    <script src="container/container.module.js" defer></script>
-    <script src="container/container.component.js" defer></script>
-    <script src="container/mainComp/mainComp.module.js" defer></script>
-    <script src="container/mainComp/mainComp.component.js" defer></script>
-    <script src="container/aboutUs/aboutUs.module.js" defer></script>
-    <script src="container/aboutUs/aboutUs.component.js" defer></script>
-    <script src="container/contact/contact.module.js" defer></script>\
-    <script src="container/contact/contact.component.js" defer></script>
-    <script src="container/weather/weather.module.js" defer></script>
-    <script src="container/weather/weather.component.js" defer></script>
+    <script src="./app.config.js" defer></script>
+    <script src="./core/weatherService.service.js"defer></script>
+    <script src="./header/header.module.js" defer></script>
+    <script src="./header/header.component.js" defer></script>
+    <script src="./mainComp/mainComp.module.js" defer></script>
+    <script src="./mainComp/mainComp.component.js" defer></script>
+    <script src="./aboutUs/aboutUs.module.js" defer></script>
+    <script src="./aboutUs/aboutUs.component.js" defer></script>
+    <script src="./contact/contact.module.js" defer></script>\
+    <script src="./contact/contact.component.js" defer></script>
+    <script src="./weather/weather.module.js" defer></script>
+    <script src="./weather/weather.component.js" defer></script>
 
 
 
@@ -25,7 +27,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <container></container>
+    <header></header>
+    <ng-view></ng-view>
     
 </body>
 </html>

@@ -1,7 +1,7 @@
 angular
     .module('mainComp')
     .component('mainComp', {
-        templateUrl: 'container/mainComp/mainComp.template.html',
+        templateUrl: 'mainComp/mainComp.template.html',
         controller: function ()  {
             this.hotels= [
                 {

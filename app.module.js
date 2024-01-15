@@ -1,3 +1,9 @@
 angular.module('myApp',[
-    'container'
+    'ngRoute',
+    'weatherService',
+    'aboutUs',
+    'contact',
+    'header',
+    'mainComp',
+    'weather'
 ]);
