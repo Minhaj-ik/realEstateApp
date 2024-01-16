@@ -1,9 +1,11 @@
 angular.module('myApp',[
     'ngRoute',
-    'weatherService',
+    'core',
     'aboutUs',
     'contact',
     'header',
     'mainComp',
-    'weather'
+    'weather',
+    'hotelDetails'
+    
 ]);

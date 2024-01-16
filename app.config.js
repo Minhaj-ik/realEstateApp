@@ -17,6 +17,11 @@ angular.
                 }).
                 when('/weather',{
                     template: '<weather></weather>'
+                }).when('/hotel/:hotelId', {
+                    template: '<hotel-details></hotel-details>'
                 })
+                .otherwise({
+                    redirectTo: '/home'
+                });
         }
 ])

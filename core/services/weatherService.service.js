@@ -1,5 +1,6 @@
-angular.module('weatherService', [])
-   .service('weatherService', ['$http', function($http) { 
+var weatherService= angular.module('weatherService', []);
+
+   weatherService.service('weatherService', ['$http', function($http) { 
         var apiKey= 'af63eafb4e393ca293584a2a2c0fbb1a';
         this.getWeather= function(city){
             var apiUrl= 'https://api.openweathermap.org/data/2.5/weather';

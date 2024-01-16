@@ -52,6 +52,11 @@ main-comp img {
     position: relative;
     border: none;
    
+  
+   
+}
+.hotel-container.a{
+    text-decoration: none;
 }
 
 .hotel-container:hover{
@@ -84,3 +89,15 @@ justify-content: center;
 }
 
 
+    .hotel-details {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+#hotel-detail-img{
+    height: 400px;
+ 
+}

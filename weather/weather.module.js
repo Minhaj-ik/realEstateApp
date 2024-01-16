@@ -1,1 +1,1 @@
-angular.module('weather', ['weatherService']);
+angular.module('weather', ['core']);

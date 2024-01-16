@@ -1,1 +1,1 @@
-angular.module('mainComp', []);
+angular.module('mainComp', ['core']);
