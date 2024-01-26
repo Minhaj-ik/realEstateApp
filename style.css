@@ -1,13 +1,12 @@
-
 *{
     margin: 0;
     padding: 0;
-    
-    
 }
+
 body{
     margin: 0;
     padding: 0;
+   
 }
 .header{
     display: flex;
@@ -16,17 +15,26 @@ body{
     background-color: rgb(230, 230, 191);
     padding: 15px;
     margin: 0px;
+    
 
 
+}
+
+#title{
+    color: black;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav ul{
     display: flex;
     list-style: none;
+    text-decoration: none;
 
 }
 
 nav ul li{
     margin-right: 15px;
+    text-decoration: none;
 }
 
 main-comp div {
@@ -51,53 +59,170 @@ main-comp img {
     padding: 2%;
     position: relative;
     border: none;
+    
+    
    
   
    
 }
-.hotel-container.a{
+
+.hotel-container a{
     text-decoration: none;
+ 
+    
 }
 
-.hotel-container:hover{
+
+.hotel-container:hover {
     background-color: black;
-    color: white;
+    
 }
 
 #hotel-name{
 display: flex;
 align-items: center;
 justify-content: center;
+text-decoration: none;
 }
 #hotel-address{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
+
 #price{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
 .search{
     display: flex;
+    padding-left: 30%;
     align-items: center;
     justify-content: center;
     border: none;
     cursor: auto;
+    width: 30%;
 }
 
-
-    .hotel-details {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+.hotel-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
 
 
 #hotel-detail-img{
     height: 400px;
  
+}
+
+.weather-app{
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-image: url('Images/bg-image.jpg');
+}
+
+.weather-container {
+    justify-content: center;
+     text-align: center;
+     max-width: 400px;
+     width: 90%;
+     margin: 60px auto;
+     padding: 10px;
+     border: 2px outset whitesmoke;
+     color: white;
+ }
+ 
+ input {
+     padding: 10px;
+     width: 70%;
+     margin-right: 5px;
+ }
+ 
+ button {
+     padding: 10px;
+     width: 25%;
+     cursor: pointer;
+ }
+ 
+ #weatherInfo {
+     margin-top: 20px;
+ }
+
+
+ .aboutUs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    display: contents;
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+}
+
+.aboutUs-container p{
+    padding: 40px;
+
+}
+
+
+.appName{
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+
+.contactUs-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-img img{
+    width: 500px;
+    height: 500px;
+
+}
+
+.form-img{
+    display:flex;
+    justify-content: space-between;
+    padding: 50px;  
+    box-sizing: border-box;
+    
+}
+
+.form{
+    width: 50%;
+    max-width: 300px; 
+    margin: auto; 
+    padding: 0 20px;
+   
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.success{
+    color: green;
+    font-size: large;
+    text-align: center;
 }

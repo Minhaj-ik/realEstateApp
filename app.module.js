@@ -6,6 +6,7 @@ angular.module('myApp',[
     'header',
     'mainComp',
     'weather',
-    'hotelDetails'
+    'hotelDetails',
+    'errors'
     
 ]);

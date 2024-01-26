@@ -19,9 +19,11 @@ angular.
                     template: '<weather></weather>'
                 }).when('/hotel/:hotelId', {
                     template: '<hotel-details></hotel-details>'
+                }).when('/errors', {
+                    template: '<errors></errors>'
                 })
                 .otherwise({
-                    redirectTo: '/home'
+                    redirectTo: '/errors'
                 });
         }
 ])

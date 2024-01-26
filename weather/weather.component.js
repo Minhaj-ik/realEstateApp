@@ -2,22 +2,22 @@ angular.module('weather')
    .component('weather', {
         templateUrl:'weather/weather.template.html',
         controller: ['weatherService', function(weatherService){
-            var $ctrl = this;
-            $ctrl.city = '';
-            $ctrl.weatherData = null;
-            $ctrl.error = null;
+            var self = this;
+          
+            // $ctrl.weatherData = null;
+            // $ctrl.error = null;
         
-            $ctrl.getWeather = function(){
+            self.getWeather = function(){
                 console.log("Get weather is working");
-                $ctrl.weatherData = null;
-                $ctrl.error = null;
+                // $ctrl.weatherData = null;
+                // $ctrl.error = null;
         
-                weatherService.getWeather($ctrl.city)
+                weatherService.getWeather(self.city)
                     .then(function(data){
-                        $ctrl.weatherData = data;
+                        self.weatherData = data;
                     })
                     .catch(function(error){
-                        $ctrl.error = 'Error while fetching the weather data:-' + error.message;
+                        self.error = 'Error while fetching the weather data:-' + error.message;
                         alert(error.message);
                     });
             };
